@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap");
+:root {
+  --clr1: rgb(21, 12, 104);
+  --clr2: rgb(236, 68, 90);
+  --clr3: #fff;
+  --clr4: #000;
+  --clr5: lightgray;
+  --clr6: yellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "PT Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+html {
+  font-size: 56%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--clr1);
+}
+
+section {
+  padding: 4rem 4%;
+}
+
+section h3 {
+  font-size: 3rem;
+  color: var(--clr2);
+  text-transform: none;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+section p {
+  color: var(--clr3);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: 2.5rem;
+  justify-content: flex-start;
+}
+
+section h4 {
+  margin: 0 0 0rem 30rem;
+  width: 40%;
+  font-size: 4rem;
+  color: var(--clr3);
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.2rem;
+  background: var(--clr1);
+}
+
+.title {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.title span {
+  color: var(--clr2);
+  font-size: 4rem;
+}
+
+.title p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--clr4);
+}
+
+.vendor-list {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vendor .vendor-row {
+  max-width: 1300px;
+  background: rgb(245, 236, 245);
+  height: 35rem;
+  flex: 1 1 30rem;
+  padding: 1.2rem;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 0.5rem rgb(236, 68, 90);
+}
+
+.vendor-row:hover {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: rotate(5deg);
+}
+
+.vendor-row .rate {
+  width: 6rem;
+  padding: 0.5rem 0.1rem;
+  color: #000;
+  border: none;
+  background: var(--clr6);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.vendor .vendor-row img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.vendor-row h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.vendor-row p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--clr4);
+}
+
+.vendor h3 {
+  font-size: 2rem;
+  color: var(clr2);
+  background: var(--clr4);
+}

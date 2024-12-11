@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap");
+:root {
+  --clr1: rgb(21, 12, 104);
+  --clr2: rgb(236, 68, 90);
+  --clr3: #fff;
+  --clr4: #000;
+  --clr5: lightgray;
+  --clr6: yellow;
+}
+
+.title {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.title span {
+  color: var(--clr2);
+  font-size: 3rem;
+
+}
+
+.title p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--clr4);
+}
+
+.invite .invitation-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.invite .invitation-row .invitation-box {
+  flex: 1 1 15rem;
+  margin: 1rem;
+  position: relative;
+  border: 0.2rem dotted var(--clr2);
+  padding: 1rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  height: 18rem;
+}
+
+.invite .invitation-row .invitation-box:hover {
+  transition: 0.5s ease;
+  transform: translateY(-2rem);
+}
+
+.invite .invitation-row .invitation-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
